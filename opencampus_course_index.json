@@ -1,0 +1,140 @@
+{
+    "Creative, Social & Sustainable": [
+        {
+            "title": "User Experience Design",
+            "url": "https://edu.opencampus.sh/en/course/551",
+            "details": {}
+        },
+        {
+            "title": "Gemeinwohl-Ökonomie im Praxistest",
+            "url": "https://edu.opencampus.sh/en/course/553",
+            "details": {}
+        },
+        {
+            "title": "Game Development Sessions",
+            "url": "https://edu.opencampus.sh/en/course/541",
+            "details": {}
+        },
+        {
+            "title": "Create Your Career",
+            "url": "https://edu.opencampus.sh/en/course/542",
+            "details": {}
+        }
+    ],
+    "Business & Startup": [
+        {
+            "title": "Marketing Sessions",
+            "url": "https://edu.opencampus.sh/en/course/558",
+            "details": {}
+        },
+        {
+            "title": "Start a Startup",
+            "url": "https://edu.opencampus.sh/en/course/546",
+            "details": {}
+        },
+        {
+            "title": "Startup Sessions",
+            "url": "https://edu.opencampus.sh/en/course/547",
+            "details": {}
+        },
+        {
+            "title": "E-Sport Job Sessions",
+            "url": "https://edu.opencampus.sh/en/course/550",
+            "details": {}
+        },
+        {
+            "title": "Future of Food",
+            "url": "https://edu.opencampus.sh/en/course/549",
+            "details": {}
+        },
+        {
+            "title": "Startup Fundamentals",
+            "url": "https://edu.opencampus.sh/en/course/548",
+            "details": {}
+        },
+        {
+            "title": "Digital Marketing & E-Commerce",
+            "url": "https://edu.opencampus.sh/en/course/545",
+            "details": {}
+        },
+        {
+            "title": "Projektmanagement Sessions",
+            "url": "https://edu.opencampus.sh/en/course/540",
+            "details": {}
+        },
+        {
+            "title": "Social Media Sessions",
+            "url": "https://edu.opencampus.sh/en/course/539",
+            "details": {}
+        },
+        {
+            "title": "Digital Prototyping & Product Development",
+            "url": "https://edu.opencampus.sh/en/course/544",
+            "details": {}
+        }
+    ],
+    "Tech & Coding": [
+        {
+            "title": "Python Programming: Beginner to Practitioner",
+            "url": "https://edu.opencampus.sh/en/course/559",
+            "details": {}
+        },
+        {
+            "title": "Introduction to Web Development",
+            "url": "https://edu.opencampus.sh/en/course/543",
+            "details": {}
+        },
+        {
+            "title": "Foundational Mathematics for AI",
+            "url": "https://edu.opencampus.sh/en/course/565",
+            "details": {}
+        },
+        {
+            "title": "From LLMs to AI Agents",
+            "url": "https://edu.opencampus.sh/en/course/563",
+            "details": {}
+        },
+        {
+            "title": "Introduction to Data Science & Machine Learning",
+            "url": "https://edu.opencampus.sh/en/course/562",
+            "details": {}
+        },
+        {
+            "title": "Elektronische Projekte mit Arduino",
+            "url": "https://edu.opencampus.sh/en/course/555",
+            "details": {}
+        },
+        {
+            "title": "Machine Learning with TensorFlow",
+            "url": "https://edu.opencampus.sh/en/course/561",
+            "details": {}
+        },
+        {
+            "title": "Advanced Time Series Prediction",
+            "url": "https://edu.opencampus.sh/en/course/560",
+            "details": {}
+        },
+        {
+            "title": "Become a Maker",
+            "url": "https://edu.opencampus.sh/en/course/552",
+            "details": {}
+        }
+    ],
+    "Degrees": [
+        {
+            "title": "WebDev Program",
+            "url": "https://edu.opencampus.sh/en/course/570",
+            "details": {}
+        },
+        {
+            "title": "Machine Learning Degree",
+            "url": "https://edu.opencampus.sh/en/course/158",
+            "details": {}
+        },
+        {
+            "title": "Digital Entrepreneurship Degree",
+            "url": "https://edu.opencampus.sh/en/course/300",
+            "details": {}
+        }
+    ]
+}

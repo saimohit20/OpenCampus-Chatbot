@@ -1,0 +1,487 @@
+[
+    {
+        "title": "Python Programming: Beginner to Practitioner",
+        "url": "https://edu.opencampus.sh/en/course/559",
+        "details": {
+            "url": "https://edu.opencampus.sh/en/course/559",
+            "description": "Want to learn to program and solve problems with it? This course takes you from beginner to seasoned practitioner. Based on material from London's most prestigious Bootcamp you will learn to program!",
+            "mentor": [
+                "Anna Kaapke",
+                "Fynn Junge"
+            ],
+            "what_we_will_learn": [
+                "Foundational understanding of Python and of key concepts in general programming",
+                "Getting proficiency in Python's basic syntax, including variables, data types, conditionals, logic, loops, and functions",
+                "Handling errors effectively and testing Python programs for robustness and reliability",
+                "Applying the principles of Object-Oriented Programming (OOP) to create modular and scalable code",
+                "Conducting basic data science tasks",
+                "Using ChatGPT for Programming"
+            ],
+            "day_time_summary": "WEDNESDAY 19:00 - 20:30",
+            "ects": "5",
+            "location": "KIEL",
+            "language": "ENGLISCH",
+            "information": "What you will getThis course addresses the introduction to solving real world problems with Programming in Python. You will learn everything you need to program your own applications at the end of the course. IMPORTANT Before applying, please follow the instructions -> H E R E <- Python use cases Let's say you are a psychologist sitting on a lot of data which should be analysed. Python Programming comes to the rescue. Or you are the employee to visualize all the company's progress in the last year and need some advanced analysis and plotting. Again Python can solve it with ease. How it works The course will take place every Wednesday from 7:00 pm to 8:30 pm. The mode will be presence only. During the week you will be expected to work through the assigned online course material, which will take you between 3 to 5 hours each week, including videos and exercises. Questions considering the course content and possible additional implications will then be discussed in the weekly course meeting on Wednesday. During the semester you will work in a team on a programming project. The course material will be 100 Days of Code: The Complete Python Pro Bootcamp on Udemy. The course has to be purchased. There is always a discount available (e.g. here or udemy first purchase), so it should cost you around 20€ max. (instead of 129,99 € listed price!!).What you should bringA general interest to really learn programming and apply it to problems. The endurance to overtake obstacles on your way to a programming Pro. Otherwise no knowledge is required. Of course the course will be less effort if you already are familiar with Python and Programming but if not definetely no problem! The formalities In order to receive a certificate of attendance (Leistungszertifikat) for this course, active participation is expected, and no more than two classes may be missed. The active participation is proven via the final presentation of your project by you and your team, and the delivery of a well documented project source code. The same conditions apply in order to receive ECTS. Further details may be given in the course.",
+            "course_sessions": [
+                {
+                    "date": "16.04.2025",
+                    "time": "19:00 - 20:30",
+                    "topic": "Introduction",
+                    "location_text": "Starterkitchen, Kuhnkestr. 6, Wissenschaftspark",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen%2C%20Kuhnkestr.%206%2C%20Wissenschaftspark"
+                },
+                {
+                    "date": "23.04.2025",
+                    "time": "19:00 - 20:30",
+                    "topic": "Variables and Data Types",
+                    "location_text": "Starterkitchen, Kuhnkestr. 6, Wissenschaftspark",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen%2C%20Kuhnkestr.%206%2C%20Wissenschaftspark"
+                },
+                {
+                    "date": "30.04.2025",
+                    "time": "19:00 - 20:30",
+                    "topic": "Conditionals",
+                    "location_text": "Starterkitchen, Kuhnkestr. 6, Wissenschaftspark",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen%2C%20Kuhnkestr.%206%2C%20Wissenschaftspark"
+                },
+                {
+                    "date": "07.05.2025",
+                    "time": "19:00 - 20:30",
+                    "topic": "Loops",
+                    "location_text": "Starterkitchen, Kuhnkestr. 6, Wissenschaftspark",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen%2C%20Kuhnkestr.%206%2C%20Wissenschaftspark"
+                }
+            ]
+        }
+    },
+    {
+        "title": "Introduction to Web Development",
+        "url": "https://edu.opencampus.sh/en/course/543",
+        "details": {
+            "url": "https://edu.opencampus.sh/en/course/543",
+            "description": "Ready to take your first steps into the world of web development? This course is the perfect place to start your journey in coding and building websites. Here, you will learn the basics of HTML, CSS, and JavaScript—key technologies that power the web. Through hands-on exercises and real-world examples, you'll gain the foundational skills needed to create structured, stylish, and interactive web pages!",
+            "mentor": [
+                "Wagner Laranjeiras dos Santos"
+            ],
+            "what_we_will_learn": [
+                "The basics of HTML (structure), CSS (style), and JavaScript (interactivity).",
+                "The fundamentals of building websites that work smoothly on all devices and are user-friendly for everyone.",
+                "A general understanding of the world of web development, including key technologies, best practices, and how everything connects."
+            ],
+            "day_time_summary": "TUESDAY 19:00 - 20:30",
+            "ects": "2,5",
+            "location": "KIEL",
+            "language": "ENGLISCH",
+            "information": "What’s in It for You?Do you want to learn how websites are built? In this introductory web development course, you will learn the basics of HTML, CSS, and JavaScript. We start from scratch and gradually build interactive, modern web pages. Along the way, you’ll also explore responsive design techniques to ensure your websites look great on all devices and understand key principles of accessibility to make them more inclusive. Each session is hands-on, giving you the chance to apply what you learn through interactive exercises.Prior Knowledge & Learning ApproachNo prior experience is needed for this course! All you need is the willingness to learn, experiment, and collaborate with others. We encourage you to ask questions, research independently, and share your knowledge with the group – that way, everyone benefits. Whether you're looking for an entry point into web development or just curious, this course will help you take your first steps.",
+            "course_sessions": [
+                {
+                    "date": "15.04.2025",
+                    "time": "19:00 - 20:30",
+                    "topic": "Introduction",
+                    "location_text": "starterkitchen.de | Kuhnkestraße 6, 24118 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=starterkitchen.de%20%7C%20Kuhnkestra%C3%9Fe%206%2C%2024118%20Kiel"
+                },
+                {
+                    "date": "22.04.2025",
+                    "time": "19:00 - 20:30",
+                    "topic": "HTML",
+                    "location_text": "starterkitchen.de | Kuhnkestraße 6, 24118 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=starterkitchen.de%20%7C%20Kuhnkestra%C3%9Fe%206%2C%2024118%20Kiel"
+                },
+                {
+                    "date": "29.04.2025",
+                    "time": "19:00 - 20:30",
+                    "topic": "HTML + CSS",
+                    "location_text": "starterkitchen.de | Kuhnkestraße 6, 24118 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=starterkitchen.de%20%7C%20Kuhnkestra%C3%9Fe%206%2C%2024118%20Kiel"
+                },
+                {
+                    "date": "06.05.2025",
+                    "time": "19:00 - 20:30",
+                    "topic": "CSS",
+                    "location_text": "starterkitchen.de | Kuhnkestraße 6, 24118 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=starterkitchen.de%20%7C%20Kuhnkestra%C3%9Fe%206%2C%2024118%20Kiel"
+                }
+            ]
+        }
+    },
+    {
+        "title": "Foundational Mathematics for AI",
+        "url": "https://edu.opencampus.sh/en/course/565",
+        "details": {
+            "url": "https://edu.opencampus.sh/en/course/565",
+            "description": "You will learn to use descriptive statistics and visualization techniques to explore datasets, solve linear equations, and model relationships using linear regression. The course covers foundational principles of probability, including Bayes' Theorem and advances into calculus, focusing on derivatives and integrals to analyze rates of change and distributions crucial for optimization and modeling in AI. This course is designed to provide the mathematical fluency necessary for more advanced stuff",
+            "mentor": [
+                "Kristian Boroz"
+            ],
+            "what_we_will_learn": [
+                "-Essential Functions with Description and Visualization of Data",
+                "-Vectors, Matrices and Linear Equations",
+                "-Linear Transformations and Vector Geometry",
+                "-Determinants and Eigenvectors",
+                "-Probability Distributions",
+                "-Derivatives and Rates of Change",
+                "-Optimization",
+                "-Integration and Probability",
+                "-Partial Derivatives and Gradients"
+            ],
+            "day_time_summary": "TUESDAY 19:00 - 20:30",
+            "ects": "2,5",
+            "location": "ONLINE",
+            "language": "ENGLISCH",
+            "information": "Coursera - Reference CourseOur course is based on the \"Foundational Mathematics for AI\" course offered by Johns Hopkins University on Coursera, which equips students with essential mathematical skills for advanced AI studies and research. Check it out: https://www.coursera.org/learn/foundational-mathematics-for-ai another alternative is: https://www.coursera.org/specializations/mathematics-for-machine-learning-and-data-science If you prefer some free alternatives - check out the YouTube-PlaylistsYouTube-Playlists:Essence of Linear Algebra: https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab Essence of Calculus: https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr Math for Deep Learning https://www.youtube.com/playlist?list=PL05umP7R6ij0bo4UtMdzEJ6TiLOqj4ZCm Mathematics for Machine Learning: https://www.youtube.com/playlist?list=PL05umP7R6ij1a6KdEy8PVE9zoCv6SlHRS",
+            "course_sessions": [
+                {
+                    "date": "15.04.2025",
+                    "time": "19:00 - 20:30",
+                    "topic": "Introduction",
+                    "location_text": "ONLINE",
+                    "location_url": null
+                },
+                {
+                    "date": "22.04.2025",
+                    "time": "19:00 - 20:30",
+                    "topic": "Essential Functions",
+                    "location_text": "ONLINE",
+                    "location_url": null
+                },
+                {
+                    "date": "29.04.2025",
+                    "time": "19:00 - 20:30",
+                    "topic": "Describing and Visualizing Data",
+                    "location_text": "ONLINE",
+                    "location_url": null
+                },
+                {
+                    "date": "09.05.2025",
+                    "time": "19:00 - 20:30",
+                    "topic": "Vectors, Matrices and Linear Transformations",
+                    "location_text": "ONLINE",
+                    "location_url": null
+                }
+            ]
+        }
+    },
+    {
+        "title": "From LLMs to AI Agents",
+        "url": "https://edu.opencampus.sh/en/course/563",
+        "details": {
+            "url": "https://edu.opencampus.sh/en/course/563",
+            "description": "This new hands-on course shows you how Large Language Models can be used and combined with Tools and Patterns to build AI Agents.",
+            "mentor": [
+                "Henrik Horst"
+            ],
+            "what_we_will_learn": [
+                "LLMs",
+                "Retrieval Augmented Generation",
+                "Workflows",
+                "Agents"
+            ],
+            "day_time_summary": "THURSDAY 18:00 - 19:30",
+            "ects": "5",
+            "location": "KIEL + ONLINE",
+            "language": "ENGLISCH",
+            "information": "What you getRamp-up course for the new fascinating capabilities of LLMs and the emerging applications of AI Agents with LLMs as the control center. Paths Throughout the course we will build multiple different applications on different levels of difficulty. There are severel tracks depending on your level of expertise: \"Taster\" : You take the course only to get an overview grasp of the concepts \"Beginner\": You do not have a lot of experience but want to build first prototypes \"Intermediate\": You want to level up your already existing skills and knowledge \"Expert\": You really want to deep dive in the materials both from practical as from a theoretical perspective You can choose the path you want to take, so that the course is open for everybody interested in the topic. We achieve those different paths with more and more in depth learning materials and tasks for the more advanced paths. You are free to choose your path and change it during the semester About the course instructor Henrik Horst teaches Machine Learning courses at opencampus.sh since 5 years. Also he is a Generative AI course instructor at the Helmholtz Gesellschaft and the Wirtschaftsakademie Schleswig-Holstein. He works as CEO at WikiMind GmbH, an AI-Software company, and has carried out multiple AI projects there. Guest speakers There will be during the course some guest speakers invited to talk about their life as an AI engineerWhat you should bringBasic Programming Knowledge in Python!! A prequisite is Python skills, if you are lacking those first take the course: Python Programming: Beginner to Practitionier Otherwise that is all for the \"Taster\" and \"Beginner\" path. For the more advanced paths more programming and project experience is necessary and also familiarity with different software tools like git and docker.",
+            "course_sessions": [
+                {
+                    "date": "17.04.2025",
+                    "time": "18:00 - 19:30",
+                    "topic": "Course Introduction & First steps",
+                    "location_text": "Starterkitchen, Kuhnkestr. 6, 24118 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen%2C%20Kuhnkestr.%206%2C%2024118%20Kiel"
+                },
+                {
+                    "date": "24.04.2025",
+                    "time": "18:00 - 19:30",
+                    "topic": "RAG +Introduction to frameworks(langchain & llamaindex)",
+                    "location_text": "Starterkitchen, Kuhnkestr. 6, 24118 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen%2C%20Kuhnkestr.%206%2C%2024118%20Kiel"
+                },
+                {
+                    "date": "08.05.2025",
+                    "time": "18:00 - 19:30",
+                    "topic": "Prompt Engineering & Demo Chatbot",
+                    "location_text": "Starterkitchen, Kuhnkestr. 6, 24118 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen%2C%20Kuhnkestr.%206%2C%2024118%20Kiel"
+                },
+                {
+                    "date": "15.05.2025",
+                    "time": "18:00 - 19:30",
+                    "topic": "Project Pitch",
+                    "location_text": "Starterkitchen, Kuhnkestr. 6, 24118 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen%2C%20Kuhnkestr.%206%2C%2024118%20Kiel"
+                }
+            ]
+        }
+    },
+    {
+        "title": "Introduction to Data Science & Machine Learning",
+        "url": "https://edu.opencampus.sh/en/course/562",
+        "details": {
+            "url": "https://edu.opencampus.sh/en/course/562",
+            "description": "Learn statistical analysis, data visualization, and how to train machine learning algorithms in Python",
+            "mentor": [
+                "Steffen Brandt",
+                "Tim Oldörp"
+            ],
+            "what_we_will_learn": [
+                "How to differentiate between data science, machine learning, and artificial intelligence",
+                "How to calculate descriptive statistics and confidence intervals and prepare them graphically",
+                "How to work in VSCode and Python with version control in a team on an analysis project",
+                "How to perform linear regressions and use imputation methods for missing values",
+                "How to train simple neural networks with Python and TensorFlow and use them for predictions"
+            ],
+            "day_time_summary": "THURSDAY 16:00 - 18:00",
+            "ects": "5",
+            "location": "KIEL + ONLINE",
+            "language": "ENGLISCH",
+            "information": "What You GetYou'll receive a practical introduction to data science and machine learning using VSCode and Python. You will work in a team on an analysis project and practically implement the various steps relevant to data science or machine learning projects using current tools and libraries. All required software and online course content is free. The use of free access to Claude.ai, GitHub, and possibly other free platforms is assumed. This course is part of the opencampus.sh Machine Learning Degree program. Participants in the Machine Learning Degree program receive preferential access to this course. More information about the degree program can be found here.What You Should BringYou should complete the first chapter of the course Introduction to Python BEFORE the course begins. Prior programming knowledge is useful to keep up with the course progress. If you have no programming experience, the pace will be very fast for you. You should therefore plan for additional time to deepen your understanding through the online resources provided (typically more than 10 hours of effort per week!). Once teams are formed and analysis projects begin (from the 3rd or 4th session), additional time should be planned to work on the project. To receive a Certificate of Achievement (or ECTS) for this course, active participation is expected, you may not miss more than two course sessions, and you must complete a practical project in a team of two to four people. At the end of the course, the project must be presented and well-documented source code for the project must be submitted. (Certificates of attendance are not issued for this course.)",
+            "course_sessions": [
+                {
+                    "date": "17.04.2025",
+                    "time": "16:00 - 18:00",
+                    "topic": "Introduction to Data Science",
+                    "location_text": "Starterkitchen, Kuhnkestr. 6, 24118 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen%2C%20Kuhnkestr.%206%2C%2024118%20Kiel"
+                },
+                {
+                    "date": "24.04.2025",
+                    "time": "16:00 - 18:00",
+                    "topic": "Data Visualization",
+                    "location_text": "Starterkitchen, Kuhnkestr. 6, 24118 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen%2C%20Kuhnkestr.%206%2C%2024118%20Kiel"
+                },
+                {
+                    "date": "08.05.2025",
+                    "time": "16:00 - 18:00",
+                    "topic": "Version Control with Git and GitHub",
+                    "location_text": "Starterkitchen, Kuhnkestr. 6, 24118 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen%2C%20Kuhnkestr.%206%2C%2024118%20Kiel"
+                },
+                {
+                    "date": "15.05.2025",
+                    "time": "16:00 - 18:00",
+                    "topic": "Data Preparation",
+                    "location_text": "Starterkitchen, Kuhnkestr. 6, 24118 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen%2C%20Kuhnkestr.%206%2C%2024118%20Kiel"
+                }
+            ]
+        }
+    },
+    {
+        "title": "Elektronische Projekte mit Arduino",
+        "url": "https://edu.opencampus.sh/en/course/555",
+        "details": {
+            "url": "https://edu.opencampus.sh/en/course/555",
+            "description": "Im FabLab ist 3D-Druck nur die halbe Miete. In diesem Kurs lernst du, eigene elektronische Systeme mit Arduino umzusetzen.  Auch für Personen ohne jede Programmier-Vorerfahrung.",
+            "mentor": [
+                "Moritz Menzel"
+            ],
+            "what_we_will_learn": [
+                "Mit der Arduino IDE Programme zu schreiben",
+                "Sensoren mit dem Arduino auszulesen.",
+                "Aktoren wie Motoren, Bildschirme und Leuchtmittel zu betreiben",
+                "Den Arduino mit anderen Geräten (z.B. Handy oder Computer) kommunizieren zu lassen",
+                "Eigene Arduinosysteme von Anfang bis Ende zu planen und umzusetzen"
+            ],
+            "day_time_summary": "TUESDAY 18:00 - 19:30",
+            "ects": "2,5",
+            "location": "KIEL",
+            "language": "DEUTSCH",
+            "information": "Für wen ist der Kurs geeignet?Du kannst diesen Kurs ohne oder mit minimalen Programmierkenntnissen besuchen, da wir bei Null anfangen. Du hast keine Scheu vor Technologie und Lust, neue Konzepte zu verstehen. Du solltest die grundlegende Bedienung deines Laptops verstehen. Auch Schüler:innen (ab ca. 15 Jahren) sind herzlich Willkommen. Hinweis: Dieser Kurs hat nur 10 Plätze Hinweis: Du brauchst einen Laptop (muss nicht brandneu sein), um an diesem Kurs teilzunehmen – zwei Leihgeräte stehen für den Gebrauch im Labor zur Verfügung. Bitte sag in diesem Fall kurz Bescheid (moritz@fablab.sh).Was erwartet dich?Arduinos sind eine Klasse von einfach programmierbaren Microcontrollern. Es handelt sich sozusagen um „Computer mit nur einem Programm“. Arduinos können mit anderen Geräten interagieren, um fast jedes technische Produkt prototypisch umzusetzen. Diese Produkte können sowohl praktischer (zum Beispiel ein Getränkeautomat) als auch künstlerischer Natur (Audio- oder Lichtinstallationen) sein. Es geht häufig darum, Werte aus der echten Welt (Sensorik) in die virtuelle Welt zu bringen und dann wieder in der echten Welt etwas zu \"machen\" (Aktorik). Wir beginnen bei den absoluten Basics des Programmierens und lernen zuerst, wie wir den Arduino mit dem Computer verbinden und Code aufspielen. Danach lernen wir jede Woche einige neue Komponenten kennen und erkunden, was diese so können. An jedem Termin werden auch Inhalte aus der vorigen Woche wiederholt. Es gibt Raum für Fragen und Hilfe bei der Umsetzung eigener Projekte. Am Ende des Kurses kann für den Erhalt eines Leistungszertifikats ein eigenes kleines Projekt programmiert, zusammengebaut und vorgestellt werden. Programmieren ist ein komplexes Thema und aller Anfang ist schwer – wir lernen in einem entspannten Tempo. Wenn die hier vermittelten Basics sitzen, ist es einfach für euch, eigenständig neues Wissen zu erwerben.",
+            "course_sessions": [
+                {
+                    "date": "15.04.2025",
+                    "time": "18:00 - 19:30",
+                    "topic": "1 STARTEN: Intro und erste Schritte",
+                    "location_text": "FabLab by opencampus.sh (https://www.openstreetmap.org/way/561739989#map=19/54.341603/10.125071)",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=FabLab%20by%20opencampus.sh%20(https%3A%2F%2Fwww.openstreetmap.org%2Fway%2F561739989%23map%3D19%2F54.341603%2F10.125071)"
+                },
+                {
+                    "date": "22.04.2025",
+                    "time": "18:00 - 19:30",
+                    "topic": "2 STEUERN : Datentypen und Kontrollstrukturen",
+                    "location_text": "FabLab by opencampus.sh (https://www.openstreetmap.org/way/561739989#map=19/54.341603/10.125071)",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=FabLab%20by%20opencampus.sh%20(https%3A%2F%2Fwww.openstreetmap.org%2Fway%2F561739989%23map%3D19%2F54.341603%2F10.125071)"
+                },
+                {
+                    "date": "29.04.2025",
+                    "time": "18:00 - 19:30",
+                    "topic": "3 LEUCHTEN: Steuern von LEDs und Buttons",
+                    "location_text": "FabLab by opencampus.sh (https://www.openstreetmap.org/way/561739989#map=19/54.341603/10.125071)",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=FabLab%20by%20opencampus.sh%20(https%3A%2F%2Fwww.openstreetmap.org%2Fway%2F561739989%23map%3D19%2F54.341603%2F10.125071)"
+                },
+                {
+                    "date": "06.05.2025",
+                    "time": "18:00 - 19:30",
+                    "topic": "4 FÜHLEN: Sensorik und Analoges",
+                    "location_text": "FabLab by opencampus.sh (https://www.openstreetmap.org/way/561739989#map=19/54.341603/10.125071)",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=FabLab%20by%20opencampus.sh%20(https%3A%2F%2Fwww.openstreetmap.org%2Fway%2F561739989%23map%3D19%2F54.341603%2F10.125071)"
+                }
+            ]
+        }
+    },
+    {
+        "title": "Machine Learning with TensorFlow",
+        "url": "https://edu.opencampus.sh/en/course/561",
+        "details": {
+            "url": "https://edu.opencampus.sh/en/course/561",
+            "description": "Get hands-on experience in applying machine learning techniques with TensorFlow.",
+            "mentor": [
+                "Hannes Körner",
+                "Jeremy von Winckelmann",
+                "Jake Petersen",
+                "Steffen Brandt"
+            ],
+            "what_we_will_learn": [
+                "Mastering best practices for TensorFlow, a popular open-source machine learning framework, to train neural networks",
+                "Handling real-world image data and exploring strategies to avoid overfitting, including techniques like augmentation and dropout",
+                "Building a system capable of processing natural language",
+                "Applying Recurrent Neural Networks (RNNs), Gated Recurrent Units (GRUs), and Long Short-Term Memory (LSTMs) networks to train models using text and time-series data"
+            ],
+            "day_time_summary": "THURSDAY 18:15 - 20:00",
+            "ects": "5",
+            "location": "KIEL + ONLINE",
+            "language": "ENGLISCH",
+            "information": "What you getThe course instruction is hybrid, which means you can participate either online via Zoom or in person in Kiel (see location listed in the dates). This course is based on the Coursera Specialization for the TensorFlow Developer Professional Certificate provided by deeplearning.ai. The instructors are Andrew Ng and Laurence Moroney. Andrew Ng was founding lead of the Google Brain Team and is a professor in computer science at Stanford University. Laurence Moroney is an AI developer at Google and author of a large variety of books. The course will provide you with an introduction to machine learning and deep learning, teach you about computer vision using convolutional neural networks, natural language processing, and how to solve time series and forecasting problems. You will apply the newly aquired knowledge to implement your own machine learning project in a team, and at the end of the course you will have a good basis to further proceed into a machine learning career. All needed software and online course content is free. This course is part of the opencampus.sh Machine Learning Degree. Participants of the program for the Machine Learning Degree get preferred access to this course. Find more information on the opencampus.sh Machine Learning Degree here.What you should bringYou already have some programming knowledge and are interested in getting hands-on knowledge in how to train and use machine learning algorithms. Also, you should bring sufficient time. During the week you will be expected to work through the assigned online course content, for which you should calculate 5-8 hours each week. With the start of your Machine Learning project (about four to five weeks into the course), you will in addition need several hours a week to work on that. In order to receive a certificate of achievement (Leistungszertifikat/ ECTS) for this course, active participation is expected, no more than two classes may be missed, and you have to conduct a practice project in a team of 2 to 4 persons. At the end of the course the project has to be presented and a well documented project source code has to be submitted. (Certificates of attendance are not issued i n this course.)",
+            "course_sessions": [
+                {
+                    "date": "17.04.2025",
+                    "time": "18:15 - 20:00",
+                    "topic": "General Introduction",
+                    "location_text": "Starterkitchen, Kuhnkestr. 6, 24118 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen%2C%20Kuhnkestr.%206%2C%2024118%20Kiel"
+                },
+                {
+                    "date": "24.04.2025",
+                    "time": "18:15 - 20:00",
+                    "topic": "Introduction to TensorFlow for AI, Machine Learning, and Deep Learning, Part I",
+                    "location_text": "Starterkitchen, Kuhnkestr. 6, 24118 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen%2C%20Kuhnkestr.%206%2C%2024118%20Kiel"
+                },
+                {
+                    "date": "08.05.2025",
+                    "time": "18:15 - 20:00",
+                    "topic": "Introduction to TensorFlow for AI, Machine Learning, and Deep Learning, Part II",
+                    "location_text": "Starterkitchen, Kuhnkestr. 6, 24118 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen%2C%20Kuhnkestr.%206%2C%2024118%20Kiel"
+                },
+                {
+                    "date": "15.05.2025",
+                    "time": "18:15 - 20:00",
+                    "topic": "Convolutional Neural Networks, Part I",
+                    "location_text": "Starterkitchen, Kuhnkestr. 6, 24118 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen%2C%20Kuhnkestr.%206%2C%2024118%20Kiel"
+                }
+            ]
+        }
+    },
+    {
+        "title": "Advanced Time Series Prediction",
+        "url": "https://edu.opencampus.sh/en/course/560",
+        "details": {
+            "url": "https://edu.opencampus.sh/en/course/560",
+            "description": "Learn relevant modeling and cutting-edge techniques for time series analysis and  prediction and apply them in a capstone project.",
+            "mentor": [
+                "Kristian Boroz",
+                "Anna-Valentina Hirsch"
+            ],
+            "what_we_will_learn": [
+                "Understand \"classical\" models from SARIMA(X) and GARCH to state-space models and filtering.",
+                "Analyze dependence concepts like copulas, gaussian processes, random matrix theory and graphs.",
+                "Study extremes, anomalies and signatures of data-streams.",
+                "Apply tree-based models like XGBoost, LightGBM and CatBoost.",
+                "Use recurrent architectures (xLSTM, GRU and LMU), VAEs and GANs for time series problems.",
+                "Gain experience with transformers, TFTs, NBEATS(x), NHITS and recent LLMs for time series data."
+            ],
+            "day_time_summary": "WEDNESDAY 19:00 - 20:30",
+            "ects": "5",
+            "location": "ONLINE",
+            "language": "ENGLISCH",
+            "information": "What you get:Per session we will cover one topic or concept: First we motivate statistical and methodological concepts. Second we discuss ML-techniques to analyze and forecast time series. Break-out rooms are regularly added to discuss group projects We start with SARIMA(X) and GARCH models (also in a multivariate settings) as an advanced \"classic\" approach and move on to state-space models and filtering techniques to study time-series data. The next step on our journey are dependence concepts like graphs, copulas, gaussian processes and random matrix theory to deepen our knowledge in general multivariate settings. In the next sessions we focus on extremes (i.e. extrem value theory) and anomalies and highlight signature methods for time series data. Our \"parallel\" stream on ML techniques will start from recent tree-based methods like XGBoost, LightGBM and CatBoost as highly valuable tools in high dimensional settings. You will become familiar with deep learning sequence models like xLSTMs, auto-encoders, GANs, Transformers, TFTs, NBEATS, NHITS plus recent LLM-models and how to apply them. Everything what is on the market right now - we will try to cover it ;-) The hands-on portion of this course focuses on using best practices and testing assumptions derived from statistical learning. This course is mainly based on various online material and references. The course instruction will be online via Zoom. For online participation, it is expected that you turn on your camera and have a sufficient internet connection. All required software and online course content is free. This course is part of the opencampus.sh \"Machine Learning Degree\". These participants will receive preferred access to this course.What you should bring:To get the most out of this course, you should be familiar with programming in Python and have a fundamental understanding of basic statistics, EDA, solid machine learning and time-series skills. These courses or comparable knowledge are required to succeed and get approval for the \"Advanced Time Series Prediction\"course: -Introduction to data science and machine learning -Machine learning with Tensorflow -Basic time series analysis skills So please provide these necessary information to your application During the week you will be expected to work through the assigned online course content and the weekly exercises. If you plan to use your own dataset, you should bring it to the introductory session to clarify whether it is suitable for the tasks throughout the course. We expect to have about 4-6 groups with 3-5 people per group. Potential capstone projects and working datasets are: Financial/Economic data: YahooFinance, FRED data... Energy Data: Electricity Consumption, Heat Load... Environmental data: Climate forecasts, Water level prediction (Floods)... Health Data: Mortality, Heartbeats... Engineering data: (Audio) Signals, default rates... You should plan to spend at least 10 hours per week working through the learning content and completing the assignments. Additional time will be needed to prepare the final project presentation. Allocating sufficient time is therefore critical. To receive a certificate of achievement (Leistungszertifikat/ ECTS) for this course, active participation is expected, no more than two classes may be missed, and you have to conduct an applied capstone project in a team. At the end of the course the project has to be presented and a well-documented project source code (GitHub) has to be submitted.",
+            "course_sessions": [
+                {
+                    "date": "16.04.2025",
+                    "time": "19:00 - 20:30",
+                    "topic": "Introduction + Time Series Data Processing for MLP",
+                    "location_text": "ONLINE",
+                    "location_url": null
+                },
+                {
+                    "date": "23.04.2025",
+                    "time": "19:00 - 20:30",
+                    "topic": "Project allocation & Time series fundamentals: (S)ARIMA(X) + GARCH",
+                    "location_text": "ONLINE",
+                    "location_url": null
+                },
+                {
+                    "date": "30.04.2025",
+                    "time": "19:00 - 20:30",
+                    "topic": "Spectral Analysis + State-Space-Filtering",
+                    "location_text": "ONLINE",
+                    "location_url": null
+                },
+                {
+                    "date": "07.05.2025",
+                    "time": "19:00 - 20:30",
+                    "topic": "Trees: From Random Forests to XGBoost/LightGBM/CatBoost",
+                    "location_text": "ONLINE",
+                    "location_url": null
+                }
+            ]
+        }
+    },
+    {
+        "title": "Become a Maker",
+        "url": "https://edu.opencampus.sh/en/course/552",
+        "details": {
+            "url": "https://edu.opencampus.sh/en/course/552",
+            "description": "Von der digitalen Zeichnung bis zum fertigen Ergebnis lernst Du, wie moderne Prototyping-Verfahren funktionieren und benutzt werden.",
+            "mentor": [
+                "Moritz Menzel"
+            ],
+            "what_we_will_learn": [
+                "Vektor-Zeichnungen zu erstellen und aufzubereiten",
+                "Lasercutter zu verwenden",
+                "2-D und 3-D Modelle mit Fusion zu konstruieren",
+                "Verschiedene 3D-Drucktechniken zu unterscheiden und anzuwenden",
+                "Prototypen mit Arduino zu erstellen"
+            ],
+            "day_time_summary": "MONDAY 18:00 - 19:30",
+            "ects": "2,5",
+            "location": "KIEL",
+            "language": "DEUTSCH",
+            "information": "Für wen ist dieser Kurs geeignet?Du interessierst Dich für modernes Prototyping und hast Lust, Dich in die zugehörigen Themen einzuarbeiten. Vorwissen ist abgesehen vom souveränen Umgang mit Computer & Maus nicht nötig, viel wichtiger sind Motivation und Neugier sowie die Bereitschaft zum selbstständigen Ausprobieren. Hinweis: Dieser Kurs hat nur 12 Plätze.Was erwartet dich?3D-Drucker und Lasercutter gehören mittlerweile zur Grundausstattung moderner Fablabs und versetzen Dich in die Lage, Bauteile schnell und reproduzierbar herzustellen. Anhand verschiedener kostenloser Softwaretools lernst Du, digitale Zeichnungen bzw. Modelle zu erstellen und für die Arbeit mit den Geräten vorzubereiten. Wir führen Dich dabei durch den Prozess von der Idee bis zum fertigen Teil. Darüber hinaus erhältst Du eine Einführung in das Erstellen und Programmieren elektronischer Schaltungen auf Basis der Arduino-Plattform. Für die Teilnahme am Kurs wird ein Laptop mit Windows 10 (64bit) oder höher, bzw. macOS 11 (Big Sur) oder höher sowie eine Maus benötigt. Zwei Leihgeräte stehen zum Arbeiten vor Ort zur Verfügung.",
+            "course_sessions": [
+                {
+                    "date": "14.04.2025",
+                    "time": "18:00 - 19:30",
+                    "topic": "1 Intro Fablab und Prototyping",
+                    "location_text": "FabLab by opencampus.sh (https://www.openstreetmap.org/way/561739989#map=19/54.341603/10.125071)",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=FabLab%20by%20opencampus.sh%20(https%3A%2F%2Fwww.openstreetmap.org%2Fway%2F561739989%23map%3D19%2F54.341603%2F10.125071)"
+                },
+                {
+                    "date": "28.04.2025",
+                    "time": "18:00 - 19:30",
+                    "topic": "2 Einführung in Software, erste Drucke",
+                    "location_text": "FabLab by opencampus.sh (https://www.openstreetmap.org/way/561739989#map=19/54.341603/10.125071)",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=FabLab%20by%20opencampus.sh%20(https%3A%2F%2Fwww.openstreetmap.org%2Fway%2F561739989%23map%3D19%2F54.341603%2F10.125071)"
+                },
+                {
+                    "date": "05.05.2025",
+                    "time": "18:00 - 19:30",
+                    "topic": "3 Konstruktion mit Fusion 360",
+                    "location_text": "FabLab by opencampus.sh (https://www.openstreetmap.org/way/561739989#map=19/54.341603/10.125071)",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=FabLab%20by%20opencampus.sh%20(https%3A%2F%2Fwww.openstreetmap.org%2Fway%2F561739989%23map%3D19%2F54.341603%2F10.125071)"
+                },
+                {
+                    "date": "12.05.2025",
+                    "time": "18:00 - 19:30",
+                    "topic": "4 Lasercutter",
+                    "location_text": "FabLab by opencampus.sh (https://www.openstreetmap.org/way/561739989#map=19/54.341603/10.125071)",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=FabLab%20by%20opencampus.sh%20(https%3A%2F%2Fwww.openstreetmap.org%2Fway%2F561739989%23map%3D19%2F54.341603%2F10.125071)"
+                }
+            ]
+        }
+    }
+]

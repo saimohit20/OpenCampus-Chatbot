@@ -1,0 +1,186 @@
+[
+    {
+        "title": "User Experience Design",
+        "url": "https://edu.opencampus.sh/en/course/551",
+        "details": {
+            "url": "https://edu.opencampus.sh/en/course/551",
+            "description": "Hast du Lust, eine App zu gestalten? Wir werden gemeinsam mithilfe von Design Thinking an nur einem Wochenende eine digitale Lösung erarbeiten und du gehst mit vielen Methoden und Impulsen aus dem Kurs, die für jeden Bereich nützlich sind.",
+            "mentor": [
+                "Carina Wente"
+            ],
+            "what_we_will_learn": [
+                "Die Basics von User Experience Design",
+                "Verschiedene Design Thinking Methoden",
+                "Die Anwendung der Tools Figma und Miro",
+                "Wireframing und Design von User Interfaces",
+                "Prototyping"
+            ],
+            "day_time_summary": null,
+            "ects": "2,5",
+            "location": "KIEL",
+            "language": "DEUTSCH",
+            "information": "How to nutzungszentrierte Entwicklung:Was ist User Experience und warum ist das Thema in der Entwicklung von Produkten und Services so relevant? Wie sieht nutzer:innenzentrierte Gestaltung aus und mit welchen Methoden lässt sich das umsetzen? Fragen über Fragen, die in drei Tagen UX/UI Bootcamp beantwortet werden. Gemeinsam durchlaufen wir einen nutzungszentrierten Designprozess. Du konzipierst und gestaltest dabei ausgehend von einem Problem oder einer Fragestellung deine eigene digitale Lösung. Du wirst verschiedene UX Methoden und Tools kennenlernen und immer wieder Input zu User Experience und User Interface Design bekommen. Am Ende des Kurses hast du deine Idee in Form eines klickbaren Prototypen mit einem Designtool gestaltet und umgesetzt. Du möchtest dabei sein? UX/UI ist keine One Woman Show, daher arbeitest du im Team mit anderen Teilnehmenden. Schreibe in deine Anmeldung gern deinen Studiengang, eventuelle Vorerfahrungen oder Interessen dazu, damit die Teams so divers wie möglich werden. Wenn du schon ein Projekt, eine Idee oder einen Wunsch bezüglich des Themas hast, gib auch das gern mit an. Vor Kursstart werden sich die Gruppen über unseren Chat bilden und ihr Thema gemeinsam definieren, damit sich alle mit der Aufgabenstellung identifizieren und wohlfühlen. Soll ja auch Spaß machen :) Der Kurs findet vom 23. bis 25. Mai in Kiel in Präsenz statt.Das bist du:Dieser Kurs ist spannend für alle, die in die digitale Designbranche reinschnuppern und Einblicke in den Berufsalltag rund um UX und UI bekommen möchten. Es sind keine Vorkenntnisse oder Kompetenzen erforderlich, es wird nur der eigene Laptop oder Macbook benötigt. Tablets eignen sich nicht. Die Tools werden im Browser genutzt, es ist keine Registrierung und kein Download notwendig. Deine Kursleitung: Carina Wente ist Senior UX Designerin bei der DSR Digital Solutions und gestaltet die Vision des Greentechs, der führende Marktplatz für regionales, authentisches und nachhaltiges Reisen zu werden – kurz #7fridays. Ihre Schwerpunktthemen sind digitale Ethik, Emotional Intelligent Design sowie übergreifende Designsysteme.",
+            "course_sessions": [
+                {
+                    "date": "23.05.2025",
+                    "time": "15:00 - 18:00",
+                    "topic": "Intro und Vorbereitung",
+                    "location_text": "Starterkitchen im Wissenschaftspark (Kuhnkestr. 6, 24118 Kiel)",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen%20im%20Wissenschaftspark%20(Kuhnkestr.%206%2C%2024118%20Kiel)"
+                },
+                {
+                    "date": "24.05.2025",
+                    "time": "10:00 - 18:00",
+                    "topic": "Ideation, Wireframing und UI Design",
+                    "location_text": "Starterkitchen im Wissenschaftspark (Kuhnkestr. 6, 24118 Kiel)",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen%20im%20Wissenschaftspark%20(Kuhnkestr.%206%2C%2024118%20Kiel)"
+                },
+                {
+                    "date": "25.05.2025",
+                    "time": "10:00 - 13:00",
+                    "topic": "Finalisierung und Abschlusspräsentation",
+                    "location_text": "Starterkitchen im Wissenschaftspark (Kuhnkestr. 6, 24118 Kiel)",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen%20im%20Wissenschaftspark%20(Kuhnkestr.%206%2C%2024118%20Kiel)"
+                }
+            ]
+        }
+    },
+    {
+        "title": "Gemeinwohl-Ökonomie im Praxistest",
+        "url": "https://edu.opencampus.sh/en/course/553",
+        "details": {
+            "url": "https://edu.opencampus.sh/en/course/553",
+            "description": "Entdecke mit uns eine neue Art, Wirtschaft zu denken und teste die Gemeinwohl-Wirkung der teilnehmenden Unternehmen!",
+            "mentor": [
+                "Lisa Buddemeier"
+            ],
+            "what_we_will_learn": [
+                "Einführung in das Konzept der Gemeinwohl-Ökonomie",
+                "Erprobung des Instruments der Gemeinwohl-Matrix in Theorie und Praxis",
+                "Kontakt zu Unternehmen aus der Region"
+            ],
+            "day_time_summary": "MONDAY",
+            "ects": "2,5",
+            "location": "KIEL",
+            "language": "DEUTSCH",
+            "information": "Worum es geht:In unserem Kurs zur Gemeinwohl-Ökonomie lernst du, wie Unternehmen nicht nur erfolgreich, sondern auch nachhaltig und fair handeln können. Statt nur Profit im Blick zu haben, geht es hier um den positiven Beitrag zum Gemeinwohl - das heißt für Umwelt und Gesellschaft. Du bekommst praktische Einblicke in ein Wirtschaftsmodell, das auf Werten wie Menschenwürde, Gerechtigkeit und ökologische Nachhaltigkeit basiert. Anhand der Gemeinwohl-Matrix lernst du unternehmerische Entscheidungen aus einer 360°-Perspektive zu bewerten und echte, zukunftsorientierte Veränderungen anzustoßen. Der Outdoor-Ausrüster Vaude, die Sparda-Bank München, die Naturkostsafterei Voelkel oder der Mobilfunkanbieter wetell zeigen schon heute, wie Gemeinwohlorientierung und wirtschaftlicher Erfolg zusammenpassen. Deine Kursleitung: Lisa Buddemeier begleitet seit vielen Jahren Teams und Organisationen in Veränderungsprozessen. Sie ist Diplompsychologin, Organisationsentwicklerin und Gemeinwohl-Ökonomie Beraterin. Ihr Engagement gilt Formen zukunftsfähigen Wirtschaftens. In Keynotes, Fortbildungsangeboten und individueller Prozessbegleitung für eine sozial-ökologische Transformation hat sie in den letzten Jahren zahlreiche Menschen inspiriert sich auf den Weg zu machen und eine Vielzahl an Unternehmen in ihrer gemeinwohl-orientierten Entwicklung begleitet.Du bist gefragt!Dieser Kurs ist für alle, die Lust haben, Wirtschaft anders zu denken und aktiv an einer besseren Zukunft mitzuwirken – egal, ob Studierende oder einfach Interessierte. Werde Teil einer Bewegung, die zeigt: Wirtschaft und Gemeinwohl können Hand in Hand gehen! Das Beste daran: Du kannst all das direkt ausprobieren. Gemeinsam in kleinen Teams analysierst du Unternehmen aus der Region, besuchst sie und entwickelst kreative Ideen, wie diese noch nachhaltiger und gemeinwohlorientierter handeln können. Deine Erkenntnisse fasst Du in einem kurzen Bericht zusammen und stellst sie während einer öffentlichen Abschlusspräsentation am letzten Kurstag vor. Es sind Studierende aller Fachrichtungen und alle weiteren Interessierten willkommen. Die Zuordnung der Teilnehmenden zu den Unternehmen geschieht am Ende des ersten Kurstages.",
+            "course_sessions": [
+                {
+                    "date": "05.05.2025",
+                    "time": "16:00 - 19:00",
+                    "topic": "Einführung in das Konzept der Gemeinwohl-Ökonomie und Vorstellung von Good-Practice-Beispielen",
+                    "location_text": "COBL, Legienstr. 40, 24103 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=COBL%2C%20Legienstr.%2040%2C%2024103%20Kiel"
+                },
+                {
+                    "date": "12.05.2025",
+                    "time": "16:00 - 20:00",
+                    "topic": "Das Instrument der Gemeinwohl-Matrix 5.1 in seiner praktischen Anwendung",
+                    "location_text": "COBL, Legienstr. 40, 24103 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=COBL%2C%20Legienstr.%2040%2C%2024103%20Kiel"
+                },
+                {
+                    "date": "16.06.2025",
+                    "time": "16:00 - 19:00",
+                    "topic": "Austausch zu den Unternehmensbesuchen, Q&A zum Bericht und der Präsentation, vertiefende Diskussion ausgewählter Themen",
+                    "location_text": "COBL, Legienstr. 40, 24103 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=COBL%2C%20Legienstr.%2040%2C%2024103%20Kiel"
+                },
+                {
+                    "date": "30.06.2025",
+                    "time": "16:00 - 19:00",
+                    "topic": "Abschlusspräsentation, Vorstellung der Fokus-Gemeinwohlberichte und Erkenntnisse aus der Arbeit zu den einzelnen Unternehmen",
+                    "location_text": "COBL, Legienstr. 40, 24103 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=COBL%2C%20Legienstr.%2040%2C%2024103%20Kiel"
+                }
+            ]
+        }
+    },
+    {
+        "title": "Game Development Sessions",
+        "url": "https://edu.opencampus.sh/en/course/541",
+        "details": {
+            "url": "https://edu.opencampus.sh/en/course/541",
+            "description": "Dein Einstieg ins Game Development! Lerne von Expert:innen  aus der Branche und entwickle gemeinsam mit uns ein Mobile Game.",
+            "mentor": [
+                "Jens Bahr",
+                "Alexander Rosenthal"
+            ],
+            "what_we_will_learn": [
+                "Einführung in Game Development",
+                "Game Design, Mechaniken und Prototyping",
+                "Grafik, Stilfindung und Storyboard",
+                "Engines und Programmierung",
+                "Zielgruppen, Playtesting, Plattformen und Vermarktung"
+            ],
+            "day_time_summary": "WEDNESDAY 17:00 - 19:00",
+            "ects": "2,5",
+            "location": "KIEL",
+            "language": "DEUTSCH",
+            "information": "Alle Basics des Game Developments in einem KursUnser Kurs bietet eine intensive Einführung in die vielen verschiedenen kreativen Bereiche der Spieleentwicklung. Lerne von Branchenprofis und entdecke die vielfältigen Facetten des Game Designs. Vom Storyboard bis zur Vermarktung – wir gehen alles einmal mit euch gemeinsam durch. Deine Kursleitung: Organisiert wird der Kurs von Jens Bahr (Gründer Off The Beaten Track & Vorstand IFgameSH) und Alexander Rosenthal (Gründer Splash Pig Games & Vorstand IFgameSH).Gemeinsames Projekt: Der Endless RunnerAls roter Faden durch das Semester entwickeln wir gemeinsam mit euch ein einfaches Mobile Game – einen Endless Runner. Wir geben euch die Tools an die Hand und gehen Schritt für Schritt durch, was ihr machen müsst. Ihr könnt das Projekt selbst weiterentwickeln, eure eigenen Ideen und Grafiken einbauen und so euer erstes eigenes Game bauen! Für den Abschluss mit Zertifikat könnt ihr uns entweder euer Game-Projekt vorstellen oder am Summer Game Jam des gemeinnützigen Vereins IFgameSH e.V. teilnehmen.",
+            "course_sessions": [
+                {
+                    "date": "16.04.2025",
+                    "time": "17:00 - 19:00",
+                    "topic": "Einführung und Überblick: Grundlagen des Game Developments",
+                    "location_text": "Starterkitchen",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen"
+                },
+                {
+                    "date": "23.04.2025",
+                    "time": "17:00 - 19:00",
+                    "topic": "Game Design und Prototyping: Konzeptionelle Entwicklung",
+                    "location_text": "Starterkitchen",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen"
+                },
+                {
+                    "date": "07.05.2025",
+                    "time": "17:00 - 19:00",
+                    "topic": "3D-Design und Blender: Vom einfachen Modell zum Charakter",
+                    "location_text": "Starterkitchen",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen"
+                },
+                {
+                    "date": "14.05.2025",
+                    "time": "17:00 - 19:00",
+                    "topic": "Engine Basics und Zusammenarbeit: Technologische Grundlagen",
+                    "location_text": "Starterkitchen",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=Starterkitchen"
+                }
+            ]
+        }
+    },
+    {
+        "title": "Create Your Career",
+        "url": "https://edu.opencampus.sh/en/course/542",
+        "details": {
+            "url": "https://edu.opencampus.sh/en/course/542",
+            "description": "Mit diesem Workshop richtest du den Blick auf deine berufliche Zukunft, um deinen Weg nach eigenen Maßstäben zu gestalten.",
+            "mentor": [
+                "Levke Spinger"
+            ],
+            "what_we_will_learn": [],
+            "day_time_summary": null,
+            "ects": "NONE",
+            "location": "KIEL",
+            "language": "DEUTSCH",
+            "information": "Was dich erwartet:In diesem Workshop nutzen wir ein Modell der Biographiearbeit und legen einen besonderen Blick auf deinen beruflichen Status-Quo, sammeln Erkenntnisse aus der Vergangenheit und entwickeln deine Vision für die Zukunft. Dabei liegt der Schwerpunkt auf Resilienz, Prioritätenfindung und Lebensplanung. Dieser Kurs ist für Dich geeignet, wenn du in Dir selbst nach Lösungen und Ideen suchen möchtest, deine eigenen Perspektiven verändern und einen Prozess anstoßen und Motivation willst. Dafür nutzen wir zwischendurch immer wieder kurze Achtsamkeitsübungen. Hinweis: Dieser Workshop legt den Schwerpunkt auf deine berufliche Entwicklung. Trotzdem geht es hierbei auch um persönliche Themen. Bitte bewirb dich für diesen Kurs, wenn du dich stabil dafür fühlst. Der Workshop stellt kein psychotherapeutisches Angebot dar.Inhalte und Ziele:Das Workshop-Wochenende verbringen wir in Präsenz und treffen uns dafür im Cobl in Kiel. Der Workshop besteht aus interaktiven Elementen im Austausch in der Gruppe und Reflexionsarbeit für dich selbst, praktischen Übungen und kurzen Impulsvorträgen. Am Ende dieses Wochenendes hast du wertvolle Einblicke erhalten, was dich als Person ausmacht und Grundlage für deinen Karriereweg bildet, neue Inspiration für die Zukunft geschöpft und mehr Klarheit über nächste Schritte entwickelt.",
+            "course_sessions": [
+                {
+                    "date": "26.04.2025",
+                    "time": "10:00 - 17:00",
+                    "topic": "Beruflicher Ist-Zustand und Visionsentwicklung für die Zukunft (Gruppeninteraktion, Reflexionsarbeit, praktische Übungen und Impulsvorträge)",
+                    "location_text": "COBL by opencampus.sh, Legienstraße 40, 24103 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=COBL%20by%20opencampus.sh%2C%20Legienstra%C3%9Fe%2040%2C%2024103%20Kiel"
+                },
+                {
+                    "date": "27.04.2025",
+                    "time": "10:00 - 17:00",
+                    "topic": "Resilienz, Prioritätenfindung und Lebensplanung (Gruppeninteraktion, Reflexionsarbeit, praktische Übungen und Impulsvorträge)",
+                    "location_text": "COBL by opencampus.sh, Legienstraße 40, 24103 Kiel",
+                    "location_url": "https://www.google.com/maps/search/?api=1&query=COBL%20by%20opencampus.sh%2C%20Legienstra%C3%9Fe%2040%2C%2024103%20Kiel"
+                }
+            ]
+        }
+    }
+]
