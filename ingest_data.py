@@ -2,6 +2,7 @@
 
 import os
 import json
+import logging
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
@@ -12,36 +13,54 @@ DOMAIN_DATA_DIR = "domain_data"
 FAISS_INDEX_PATH = "faiss_index" # Directory to save the FAISS index
 EMBEDDING_MODEL_NAME = "models/text-embedding-004" # Recommended for Google models
 
+# --- IMPORTANT: Your Google API Key ---
+# Replace 'YOUR_GOOGLE_API_KEY' with your actual API key
+# For production, consider environment variables or secret management.
+GOOGLE_API_KEY = "AIzaSyAdab1EdwNZtZ8yQhfwHvK3V6Ir-YDhihQ"  # Set your Google API key here 
+
+# --- Configure Logging ---
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
 def load_json_data(directory_path: str) -> list[dict]:
-    """Loads all JSON files from a specified directory."""
+    """
+    Loads all JSON files from a specified directory.
+    Injects a 'category' key into each course dictionary based on the filename.
+    """
     all_data = []
     if not os.path.exists(directory_path):
-        print(f"Error: Directory '{directory_path}' not found.")
-        print(f"Please create a '{directory_path}' folder and place your JSON files inside.")
+        logging.error(f"Error: Directory '{directory_path}' not found.")
+        logging.error(f"Please create a '{directory_path}' folder and place your JSON files inside.")
         return all_data
 
     for filename in os.listdir(directory_path):
         if filename.endswith(".json"):
             filepath = os.path.join(directory_path, filename)
+            # Extract category from filename (e.g., 'programming_courses.json' -> 'programming_courses')
+            category = os.path.splitext(filename)[0]
             try:
                 with open(filepath, 'r', encoding='utf-8') as f:
                     data = json.load(f)
-                    # Assuming each JSON file contains a list of course objects, or a single course object
                     if isinstance(data, list):
-                        all_data.extend(data)
-                    else:
+                        for item in data:
+                            if isinstance(item, dict):
+                                item['category'] = category # Add category to each item
+                            all_data.append(item)
+                    else: # Assuming a single course object in the file
+                        if isinstance(data, dict):
+                            data['category'] = category # Add category to the single item
                         all_data.append(data)
-                print(f"Loaded data from: {filename}")
+                logging.info(f"Loaded data from: {filename} (Category: {category})")
             except json.JSONDecodeError as e:
-                print(f"Error decoding JSON from {filename}: {e}")
+                logging.error(f"Error decoding JSON from {filename}: {e}")
             except Exception as e:
-                print(f"An unexpected error occurred while loading {filename}: {e}")
+                logging.error(f"An unexpected error occurred while loading {filename}: {e}")
     return all_data
 
 def process_course_data(course: dict) -> Document:
     """
     Combines relevant fields from a course dictionary into a single text string
-    and extracts metadata. Returns a LangChain Document object.
+    and extracts metadata. Includes the extracted 'category' in content and metadata.
+    Returns a LangChain Document object.
     """
     details = course.get('details', {})
     
@@ -50,7 +69,10 @@ def process_course_data(course: dict) -> Document:
     mentor_str = ", ".join(details.get('mentor', []))
 
     # Construct the content string from relevant fields
+    # Prioritize category to give it prominence in the content
     content_parts = []
+    if course.get('category'):
+        content_parts.append(f"Category: {course['category'].replace('_', ' ').title()}") # Make it more readable
     if course.get('title'):
         content_parts.append(f"Title: {course['title']}")
     if details.get('description'):
@@ -81,7 +103,7 @@ def process_course_data(course: dict) -> Document:
         "language": details.get('language'),
         "location": details.get('location'),
         "ects": details.get('ects'),
-        # You can add more metadata as needed here from the 'details' or 'course' object
+        "category": course.get('category') # Include category in metadata
     }
     
     # Remove metadata entries that are None or empty strings to keep it clean
@@ -92,71 +114,94 @@ def process_course_data(course: dict) -> Document:
 def main():
     # 1. Ensure the domain_data folder exists
     if not os.path.exists(DOMAIN_DATA_DIR):
-        print(f"Error: The directory '{DOMAIN_DATA_DIR}' does not exist.")
-        print("Please create this folder in your project directory and place your JSON data files inside it.")
-        print("Exiting ingestion process.")
+        logging.error(f"The directory '{DOMAIN_DATA_DIR}' does not exist.")
+        logging.error("Please create this folder in your project directory and place your JSON data files inside it.")
+        logging.info("Exiting ingestion process.")
         return
 
     # 2. Load all JSON data from the specified directory
-    print(f"\nLoading data from '{DOMAIN_DATA_DIR}'...")
+    logging.info(f"\nLoading data from '{DOMAIN_DATA_DIR}'...")
     raw_courses_data = load_json_data(DOMAIN_DATA_DIR)
     if not raw_courses_data:
-        print("No JSON files found or data loaded. Please ensure your JSON files are in the 'domain_data' folder.")
-        print("Exiting.")
+        logging.warning("No JSON files found or data loaded. Please ensure your JSON files are in the 'domain_data' folder.")
+        logging.info("Exiting.")
         return
 
     # 3. Process raw data into LangChain Document objects
-    print(f"Processing {len(raw_courses_data)} courses into initial LangChain documents...")
+    logging.info(f"Processing {len(raw_courses_data)} courses into initial LangChain documents...")
     all_base_documents = []
     for course_data in raw_courses_data:
         # Check if 'details' key exists and is a dictionary, otherwise skip
         if isinstance(course_data, dict) and 'details' in course_data and isinstance(course_data['details'], dict):
             all_base_documents.append(process_course_data(course_data))
         else:
-            print(f"Skipping malformed course data (missing 'details' or not a dict): {course_data.get('title', 'Unknown Title')}")
+            logging.warning(f"Skipping malformed course data (missing 'details' or not a dict): {course_data.get('title', 'Unknown Title')}")
 
 
     if not all_base_documents:
-        print("No valid course documents were generated. Check your JSON structure.")
+        logging.warning("No valid course documents were generated. Check your JSON structure.")
         return
 
     # 4. Split documents into smaller, overlapping chunks
-    print("Splitting documents into smaller, overlapping chunks...")
+    logging.info("Splitting documents into smaller, overlapping chunks...")
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000,      # Characters per chunk
-        chunk_overlap=200,    # Overlap between chunks
+        chunk_size=1000,      # Characters per chunk (Experiment with 500-1500)
+        chunk_overlap=200,    # Overlap between chunks (Experiment with 100-300)
         length_function=len,  # Use character length
-        is_separator_regex=False, # Treat separators as literal strings
+        # Consider specific separators if your content has predictable structures
+        separators=["\n\n\n", "\n\n", "\n", ". ", " ", ""],
     )
     # The splitter will intelligently break `page_content` and preserve `metadata`
     chunked_documents = text_splitter.split_documents(all_base_documents)
-    print(f"Original documents: {len(all_base_documents)}, Created chunks: {len(chunked_documents)}")
+    logging.info(f"Original documents: {len(all_base_documents)}, Created chunks: {len(chunked_documents)}")
+
+    if not chunked_documents:
+        logging.warning("No chunks were created after splitting. Check your input data or splitter settings.")
+        return
 
     # 5. Initialize Google Gemini Embeddings
-    print(f"Initializing embedding model: '{EMBEDDING_MODEL_NAME}'...")
+    logging.info(f"Initializing embedding model: '{EMBEDDING_MODEL_NAME}' with provided API key...")
     try:
-        # The GOOGLE_API_KEY environment variable is automatically picked up here
-        embeddings = GoogleGenerativeAIEmbeddings(model=EMBEDDING_MODEL_NAME)
+        # Pass the API key directly to the constructor
+        embeddings = GoogleGenerativeAIEmbeddings(model=EMBEDDING_MODEL_NAME, google_api_key=GOOGLE_API_KEY)
+        # Test a small embedding to catch API key issues early
+        _ = embeddings.embed_query("test query")
+        logging.info("Embedding model initialized and tested successfully.")
     except Exception as e:
-        print(f"ERROR: Could not initialize GoogleGenerativeAIEmbeddings.")
-        print(f"Please ensure your GOOGLE_API_KEY environment variable is correctly set and valid.")
-        print(f"Details: {e}")
+        logging.error(f"ERROR: Could not initialize GoogleGenerativeAIEmbeddings.")
+        logging.error(f"Please ensure your GOOGLE_API_KEY variable is correctly set and valid in the code.")
+        logging.error(f"Details: {e}")
         return
 
     # 6. Create and Save FAISS Index
-    print("Creating FAISS index from document chunks and embeddings...")
+    logging.info("Creating FAISS index from document chunks and embeddings...")
     try:
         db = FAISS.from_documents(chunked_documents, embeddings)
     except Exception as e:
-        print(f"ERROR: Failed to create FAISS index. This might be due to issues with embeddings or data.")
-        print(f"Details: {e}")
+        logging.error(f"ERROR: Failed to create FAISS index. This might be due to issues with embeddings or data.")
+        logging.error(f"Details: {e}")
         return
     
     # Ensure the directory for FAISS index exists
     os.makedirs(FAISS_INDEX_PATH, exist_ok=True)
     db.save_local(FAISS_INDEX_PATH)
-    print(f"FAISS index created and saved successfully to '{FAISS_INDEX_PATH}'")
-    print("\nIngestion complete!")
+    logging.info(f"FAISS index created and saved successfully to '{FAISS_INDEX_PATH}'")
+    
+    # --- Verification Step ---
+    logging.info("Verifying FAISS index...")
+    try:
+        # Load the database to verify it exists and contains vectors
+        # allow_dangerous_deserialization=True is necessary when loading FAISS index with custom LangChain classes (like Documents)
+        loaded_db = FAISS.load_local(FAISS_INDEX_PATH, embeddings, allow_dangerous_deserialization=True)
+        
+        if hasattr(loaded_db, 'index') and loaded_db.index.ntotal > 0:
+            logging.info(f"Verified: FAISS index loaded successfully with {loaded_db.index.ntotal} vectors.")
+        else:
+            logging.warning("Warning: FAISS index loaded but appears to be empty or corrupted.")
+    except Exception as e:
+        logging.error(f"Verification Error: Could not load or verify FAISS index from '{FAISS_INDEX_PATH}'. Details: {e}")
+
+    logging.info("\nIngestion complete!")
 
 
 if __name__ == "__main__":
