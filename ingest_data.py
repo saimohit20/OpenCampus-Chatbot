@@ -16,7 +16,7 @@ EMBEDDING_MODEL_NAME = "models/text-embedding-004" # Recommended for Google mode
 # --- IMPORTANT: Your Google API Key ---
 # Replace 'YOUR_GOOGLE_API_KEY' with your actual API key
 # For production, consider environment variables or secret management.
-GOOGLE_API_KEY = "AIzaSyAdab1EdwNZtZ8yQhfwHvK3V6Ir-YDhihQ"  # Set your Google API key here 
+GOOGLE_API_KEY = ""  # Set your Google API key here 
 
 # --- Configure Logging ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
