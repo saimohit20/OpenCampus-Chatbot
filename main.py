@@ -20,7 +20,7 @@ from langchain_core.output_parsers import StrOutputParser # To parse LLM output 
 # --- Configuration ---
 FAISS_INDEX_PATH = "faiss_index" # Ensure this directory exists and contains your FAISS index
 EMBEDDING_MODEL_NAME = "models/text-embedding-004" # Ensure this matches your ingest_data.py
-GOOGLE_API_KEY = "AIzaSyAdab1EdwNZtZ8yQhfwHvK3V6Ir-YDhihQ" # <--- IMPORTANT: REPLACE WITH YOUR ACTUAL GOOGLE API KEY
+GOOGLE_API_KEY = "" # <--- IMPORTANT: REPLACE WITH YOUR ACTUAL GOOGLE API KEY
 OLLAMA_BASE_URL = "http://localhost:11434" # Adjust if your Ollama server is on a different address
 
 # --- Configure Logging ---
