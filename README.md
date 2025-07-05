@@ -1,9 +1,7 @@
 # OpenCampus-Chatbot
 ------------------------
 
-# OpenCampus Course Assistant
-
-Welcome to OpenCampus Bot! This is an intelligent chatbot designed to help you quickly find information about courses offered by OpenCampus. Whether you want to know what courses are available, get detailed information about a specific program, or compare two courses side-by-side, EduBot is here to assist.
+Welcome to OpenCampus Bot! This is an intelligent chatbot designed to help you quickly find information about courses offered by OpenCampus. Whether you want to know what courses are available, get detailed information about a specific program, or compare two courses side-by-side, OpenCampus Bot is here to assist.
 
 ---
 
@@ -13,7 +11,7 @@ Welcome to OpenCampus Bot! This is an intelligent chatbot designed to help you q
 
 ## What is Opencampus Bot?
 
-Opencampus Bot acts as your personal guide to OpenCampus courses. Instead of manually searching through the website, you can simply ask EduBot your questions in plain language, and it will provide relevant answers based on the official course materials.
+Opencampus Bot acts as your personal guide to OpenCampus courses. Instead of manually searching through the website, you can simply ask OpenCampus Bot your questions in plain language, and it will provide relevant answers based on the official course materials.
 
 ---
 
@@ -33,7 +31,7 @@ Opencampus Bot works in three main steps:
 ### 1. Gathering Course Information (The "Collector")
 
 * **What it does:** We have a special script that acts like a web browser, visiting the OpenCampus website. It carefully reads through all the course pages, collecting every detail about each course – like its title, what you'll learn, who teaches it, where it's held, and even the session dates.
-* **Why it's important:** This step ensures EduBot has all the latest and most accurate information directly from the source.
+* **Why it's important:** This step ensures Opencampus Bot has all the latest and most accurate information directly from the source.
 * **Output:** All this collected information is neatly organized and saved into structured `.json` files on your computer.
 
 ### 2. Building the Brain (The "Librarian")
@@ -75,7 +73,7 @@ To get EduBot up and running, you'll need Python installed and a few simple step
     ```bash
     pip install -r requirements.txt
     ```
-3.  **Set Your Google API Key:** Open `create_faiss_index.py` and `app.py`. Find the line `GOOGLE_API_KEY = "YOUR_GOOGLE_API_KEY"` and replace `"YOUR_GOOGLE_API_KEY"` with your actual Google API Key.
+3.  **Set Your Google API Key:** Open `ingest_data.py` and `main.py`. Find the line `GOOGLE_API_KEY = "YOUR_GOOGLE_API_KEY"` and replace `"YOUR_GOOGLE_API_KEY"` with your actual Google API Key.
 4.  **Gather Course Data:** Run the scraping script (this will create the `domain_data` folder and fill it with course info):
     ```bash
     python scraping_pipeline.py
@@ -94,4 +92,4 @@ To get EduBot up and running, you'll need Python installed and a few simple step
 
 ---
 
-Enjoy chatting with EduBot!
+Enjoy chatting with OpenCampus Bot!
