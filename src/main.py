@@ -18,10 +18,17 @@ from langchain_core.output_parsers import StrOutputParser # To parse LLM output 
 
 
 # --- Configuration ---
+
 FAISS_INDEX_PATH = "faiss_index" # Ensure this directory exists and contains your FAISS index
 EMBEDDING_MODEL_NAME = "models/text-embedding-004" # Ensure this matches your ingest_data.py
 GOOGLE_API_KEY = "" # <--- IMPORTANT: REPLACE WITH YOUR ACTUAL GOOGLE API KEY
 OLLAMA_BASE_URL = "http://localhost:11434" # Adjust if your Ollama server is on a different address
+
+FAISS_INDEX_PATH = "../faiss_index" 
+EMBEDDING_MODEL_NAME = "models/text-embedding-004" 
+GOOGLE_API_KEY = "AIzaSyAdab1EdwNZtZ8yQhfwHvK3V6Ir-YDhihQ" 
+OLLAMA_BASE_URL = "http://localhost:11434"
+
 
 # --- Configure Logging ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -83,7 +90,10 @@ def get_memory():
     return ConversationBufferMemory(memory_key="chat_history", return_messages=True, output_key="answer")
 
 
+<<<<<<< HEAD:main.py
 # --- Document Prompt Template ---
+=======
+>>>>>>> d3f9582 (updated folder structure):src/main.py
 
 document_prompt_template = PromptTemplate(
     template="""
@@ -148,6 +158,7 @@ COMBINE_PROMPT = PromptTemplate(
                 -   *Course Sessions:* (from 'Course Sessions' section in content - list each session's date, time, topic, and location clearly)
             * *After providing ALL these details, conclude by providing the Course URL* for the most comprehensive information. For example: "For the most comprehensive details and to register, please visit the official course page: [Course URL from metadata]"
             * *Avoid Redundancy:* Ensure you don't repeat information already given in a prior initial list for the same course; focus on the new, detailed information.
+            * *Make sure that deatils are presented in the above structured format, with clear headings for each section.*
 
     5.  *Fallback / No Information:*
         * If no relevant course information is found in the context for the 'Current User Question', or if the question is completely out of scope for OpenCampus courses, politely state: "I apologize, but I don't have enough information about that specific topic from our current OpenCampus course materials. Can I help with anything else about OpenCampus courses?" Do not invent answers.
