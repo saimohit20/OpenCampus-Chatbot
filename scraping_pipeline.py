@@ -38,11 +38,7 @@ def load_data_from_json(filename):
 
 # --- Initial Scraping Function (for course_index.json) ---
 async def get_all_courses_by_domain(url):
-    """
-    Scrapes the main page to get a list of courses categorized by domain.
-    Returns a dictionary where keys are domain names and values are lists of courses.
-    Each course is a dictionary with 'title' and 'url'.
-    """
+
     all_domains_courses = {}
     print(f"\n[STEP 1/2: Initial Scrape] Starting initial scrape of main page: {url}")
     try:
@@ -109,10 +105,7 @@ async def get_all_courses_by_domain(url):
 
 # --- Detailed Scraping Function (for individual course pages) ---
 async def get_course_details_from_page(page, course_url):
-    """
-    Navigates to a specific course URL and extracts detailed information.
-    Includes robust error handling and debug statements only for missing fields.
-    """
+
     course_details = {
         'url': course_url, # Store the URL with its details
         'description': None,
