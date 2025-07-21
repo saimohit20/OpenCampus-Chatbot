@@ -50,7 +50,7 @@ def get_ollama_models():
 # --- FAISS Loading Function ---
 @st.cache_resource
 def load_faiss_and_embeddings():
-    """Loads the FAISS vector store and Google Generative AI embeddings."""
+    
     if not GOOGLE_API_KEY or GOOGLE_API_KEY == "YOUR_GOOGLE_API_KEY":
         st.error("GOOGLE_API_KEY is empty or placeholder. Please replace 'YOUR_GOOGLE_API_KEY' with your actual API key.")
         st.stop()
@@ -84,8 +84,7 @@ def get_memory():
 
 
 # --- Document Prompt Template ---
-# This template is used by the RAG chain to format the retrieved documents
-# before passing them to the LLM for answer generation.
+
 document_prompt_template = PromptTemplate(
     template="""
     --- Retrieved Document ---
@@ -105,8 +104,6 @@ document_prompt_template = PromptTemplate(
 )
 
 
-# --- The Single, Highly Conditional Combine Docs Prompt Template ---
-# This is the main prompt for your RAG chain that guides the LLM in generating the final answer.
 COMBINE_PROMPT = PromptTemplate(
     template="""
     You are "Open Campus Bot", a helpful and knowledgeable educational assistant for OpenCampus.
@@ -218,7 +215,7 @@ TOOL_SELECTION_PROMPT = PromptTemplate(
 
 @st.cache_resource(hash_funcs={ChatOllama: lambda _: None, ChatGoogleGenerativeAI: lambda _: None})
 def initialize_rag_chain(_faiss_db, selected_llm_model_name):
-    """Initializes and returns the RAG chain (ConversationalRetrievalChain) with the single COMBINE_PROMPT."""
+    
     logging.info(f"Initializing RAG chain with model: {selected_llm_model_name}")
     llm = None
     memory = get_memory()
@@ -263,7 +260,7 @@ def initialize_rag_chain(_faiss_db, selected_llm_model_name):
 
 @st.cache_resource(hash_funcs={ChatOllama: lambda _: None, ChatGoogleGenerativeAI: lambda _: None})
 def get_tool_selection_llm(selected_llm_model_name):
-    """Initializes and returns an LLM specifically for tool selection/routing."""
+
     logging.info(f"Initializing Tool Selection LLM with model: {selected_llm_model_name}")
     try:
         # Use a low temperature for more deterministic output for routing
@@ -280,11 +277,7 @@ def get_tool_selection_llm(selected_llm_model_name):
 
 # --- Helper functions for compare_courses tool ---
 def get_course_document_by_name_or_fuzzy(query_name: str, faiss_db: FAISS, llm_for_routing: Any) -> (Document | None, str | None): # type: ignore
-    """
-    Attempts to find a single best-matching course document for a given query name.
-    Uses semantic search and an LLM to select the most likely course.
-    Returns (document, recognized_course_name) or (None, None) if not found.
-    """
+    
     logging.info(f"Attempting to find document for course query: '{query_name}'")
     
     # Perform a semantic search on the FAISS DB
@@ -294,8 +287,6 @@ def get_course_document_by_name_or_fuzzy(query_name: str, faiss_db: FAISS, llm_f
         logging.info(f"No documents retrieved for '{query_name}'.")
         return None, None
 
-    # Use an LLM to select the *best* course from the retrieved documents
-    # --- FIX APPLIED HERE: Removed {titles_list} from template string ---
     selection_prompt = PromptTemplate(
         template="""
         The user asked for information about a course. You have retrieved the following course titles. Based on these and the user's query, identify the most likely course.
@@ -377,10 +368,6 @@ def extract_structured_course_data(doc: Document) -> Dict[str, Any]:
     }
 
     content = doc.page_content
-
-    # --- Robust Regex Patterns for Content Extraction ---
-    # Look for "Description:" followed by content, until the next major section heading
-    # or the end of the document.
     desc_match = re.search(r"Description:\s*(.*?)(?=\n(?:What you will learn|Information|Course Sessions|Overview):|\n{2,}|\Z)", content, re.DOTALL | re.IGNORECASE)
     data["description"] = desc_match.group(1).strip() if desc_match else "No description available."
     if data["description"] == "": # Handle cases where description might be empty but match was found
@@ -401,15 +388,9 @@ def extract_structured_course_data(doc: Document) -> Dict[str, Any]:
     return data
 
 # --- Compare Courses Tool Function ---
-# Note: For LangChain's AgentExecutor, tools are usually defined outside main and passed in.
-# Here, we're making it a regular function that the main loop calls directly based on tool selection.
-# It needs access to faiss_db and an LLM for internal formatting.
+
 def compare_courses(course1_name: str, course2_name: str, faiss_db: FAISS, llm_for_routing: Any) -> str:
-    """
-    Compares two specified courses side-by-side based on their details,
-    excluding mentor and location, and provides links for more information.
-    Handles fuzzy course name matching.
-    """
+   
     logging.info(f"Starting comparison for: '{course1_name}' vs '{course2_name}'")
 
     # Step 1: Find the actual course documents using fuzzy matching
@@ -451,7 +432,7 @@ def compare_courses(course1_name: str, course2_name: str, faiss_db: FAISS, llm_f
         logging.info(f"Category mismatch detected: {category1} vs {category2}")
 
     # Step 5: Use LLM to format the comparison table
-    # --- FIX APPLIED HERE: Added clear instruction for Markdown link format ---
+    
     comparison_formatter_prompt = PromptTemplate(
         template="""
         You are an expert at comparing educational courses.
@@ -600,8 +581,7 @@ def main():
         for _ in range(8):
             st.empty()
     else:
-        # If greeting is done, and no user messages yet, add some empty space
-        # This prevents the input field from jumping up immediately after greeting
+        
         if not any(msg["role"] == "user" for msg in st.session_state.messages):
             for _ in range(8):
                 st.empty()
@@ -744,8 +724,6 @@ def main():
                                 answer_set = True # Answer is set, no need for general_qa fallback
 
                         # --- General QA / Fallback Logic ---
-                        # This 'if not answer_set' block will execute ONLY if no specific tool
-                        # (or its refinement) successfully set the 'llm_answer'.
                         if not answer_set:
                             # If the current_action_tool was anything other than "general_qa" initially,
                             # it means we've fallen through/rerouted here.
