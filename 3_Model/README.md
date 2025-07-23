@@ -1,4 +1,4 @@
-# 3_Model
+# LLMs
 
 This folder contains the main chatbot application for the OpenCampus project.
 
