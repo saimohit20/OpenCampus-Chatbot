@@ -3,8 +3,12 @@
 
 Welcome to OpenCampus Bot! This is an intelligent chatbot designed to help you quickly find information about courses offered by OpenCampus. Whether you want to know what courses are available, get detailed information about a specific program, or compare two courses side-by-side, OpenCampus Bot is here to assist.
 
----
+----
+### Repository Link
 
+[GitHub Repository](https://github.com/saimohit20/OpenCampus-Chatbot.git)
+
+------
 <img width="1029" alt="Screenshot 2025-07-05 at 22 37 17" src="https://github.com/user-attachments/assets/db72bc81-0209-4343-99da-06a3774a957f" />
 
 -----------
@@ -24,33 +28,39 @@ Opencampus Bot acts as your personal guide to OpenCampus courses. Instead of man
 
 ---
 
-## How It Works (Behind the Scenes)
+## How It Works
 
-Opencampus Bot works in three main steps:
+<img width="1096" height="574" alt="Screenshot 2025-07-21 at 11 38 10" src="https://github.com/user-attachments/assets/c1cb3a48-99c1-4851-9678-d675eaa68f62" />
 
-### 1. Gathering Course Information (The "Collector")
+* **Chat:** You start by asking a question, for example, "What are courses available in Tech?"
+* **Tool Agent:** The system analyzes your question to determine your intent and selects the right tool.
+* **Prompt:** Based on your intent, the Agent identifies the relevant function or "tool" needed (e.g., "List Courses").
+* **Tool Calling:** If you ask for courses in a specific category (like "tech"), the system gets ready to use the right function.
+* **JSON Output:** The Agent creates a data message (in JSON format) telling the bot which tool to use ("list_courses_by_category") and what category to look in ("Tech & Coding").
+* **Tool Action:** The chosen tool then does its job. In this example, it prepares a request to get all courses in the "Tech & Coding" category.
+* **Response:** Finally, the bot gives you the answer, showing the available courses in the "Tech & Coding" category and follow up question.
 
-* **What it does:** We have a special script that acts like a web browser, visiting the OpenCampus website. It carefully reads through all the course pages, collecting every detail about each course – like its title, what you'll learn, who teaches it, where it's held, and even the session dates.
-* **Why it's important:** This step ensures Opencampus Bot has all the latest and most accurate information directly from the source.
-* **Output:** All this collected information is neatly organized and saved into structured `.json` files on your computer.
-
-### 2. Building the Brain (The "Librarian")
-
-* **What it does:** Another script takes all those collected `.json` files. It reads the course details and converts them into a special numerical format that computers can understand very quickly. Think of it like creating a super-fast, searchable index for a massive library. This index is called a "vector database" (specifically, a FAISS index).
-* **Why it's important:** When you ask a question, EduBot doesn't read every single course description from scratch. Instead, it uses this "brain" to instantly find only the most relevant pieces of information related to your question.
-* **Output:** A ready-to-use "brain" (the `faiss_index` folder) that the chatbot can query.
-
-### 3. Talking to the Bot (The "Chat Interface")
-
-* **What it does:** This is the part you interact with! When you type a question:
-    * **Understanding Your Intent:** A smart AI part first figures out *what you want to do*. Are you asking for a simple list? Detailed info? Or do you want to compare courses?
-    * **Finding the Answer:**
-        * If it's a general question or detail request, it uses the "brain" (FAISS index) to pull out the most relevant course information.
-        * If you're comparing courses, it has a special process to find the exact courses you mean (even if you use short names) and then creates a neat comparison table for you.
-    * **Giving You the Response:** Finally, it uses powerful AI language models (like Google Gemini or local models like Gemma/Llama) to turn the found information into a clear, natural-sounding answer that's displayed in the chat.
-* **Why it's important:** This is where all the pieces come together to provide a seamless, intelligent conversation experience.
-
----
+------
+## Project Structure
+```bash
+OpenCampus-Chatbot/
+├── 0_Literature Review/          # Literature review and research notes
+├── 1_scraping/                   # Web scraping scripts and raw course data
+│   ├── domain_data/              # Scraped course data in JSON format
+│   └── scraping_pipeline.py      # Script to scrape course data
+├── 2_vector_store/               # Vector database and ingestion scripts
+│   ├── faiss_index/              # FAISS vector index files
+│   └── ingest_data.py            # Script to process and embed course data
+├── 3_Model/                      # Main chatbot application and assets
+│   ├── main.py                   # Streamlit app for the chatbot
+│   └── opencampus_logo.png       # Logo for the app
+├── 4_Presentation/               # Presentation materials
+├── 5_results/                    # Results and reports
+├── CoverImage/                   # Cover images for documentation
+├── requirements.txt              # Python dependencies
+└── README.md                    
+```
+-----
 
 ## Technologies Used
 
@@ -88,8 +98,23 @@ To get EduBot up and running, you'll need Python installed and a few simple step
     ```
     Your opencampus chatbot will open in your web browser!
 
+----------
+## Future Works
+
+* **Build End-to-End Data Pipeline:** Implement an automated pipeline to regularly fetch data from the website (monthly/weekly).
+
+* **Enable Course Registration:** Integrate functionality for users to register for courses directly through the chatbot.
+
+* **Integrate with Other LLMs:** Explore integration with additional Large Language Models beyond the current ones.
+
+* **Channel Integration for Updates:** Connect with relevant channels to receive updates and answer common course-related questions.
+
+-------------
+
 **Note:** If you want to use local AI models (like Gemma or Llama), you'll also need to set up [Ollama](https://ollama.com/) and pull the models you want to use before running `main.py`.
 
+---
+![Cover Image](CoverImage/CoverImage.png)
 ---
 
 Enjoy chatting with OpenCampus Bot!

@@ -19,12 +19,8 @@ from langchain_core.output_parsers import StrOutputParser # To parse LLM output 
 
 # --- Configuration ---
 
-FAISS_INDEX_PATH = "faiss_index" # Ensure this directory exists and contains your FAISS index
-EMBEDDING_MODEL_NAME = "models/text-embedding-004" # Ensure this matches your ingest_data.py
-GOOGLE_API_KEY = "" # <--- IMPORTANT: REPLACE WITH YOUR ACTUAL GOOGLE API KEY
-OLLAMA_BASE_URL = "http://localhost:11434" # Adjust if your Ollama server is on a different address
 
-FAISS_INDEX_PATH = "../faiss_index" 
+FAISS_INDEX_PATH = "../2_vector_store/faiss_index" 
 EMBEDDING_MODEL_NAME = "models/text-embedding-004" 
 GOOGLE_API_KEY = "AIzaSyAdab1EdwNZtZ8yQhfwHvK3V6Ir-YDhihQ" 
 OLLAMA_BASE_URL = "http://localhost:11434"
@@ -90,10 +86,10 @@ def get_memory():
     return ConversationBufferMemory(memory_key="chat_history", return_messages=True, output_key="answer")
 
 
-<<<<<<< HEAD:main.py
+
 # --- Document Prompt Template ---
-=======
->>>>>>> d3f9582 (updated folder structure):src/main.py
+
+
 
 document_prompt_template = PromptTemplate(
     template="""
