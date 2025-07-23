@@ -113,7 +113,7 @@ To get EduBot up and running, you'll need Python installed and a few simple step
 3. **[vector Store](2_vector_store/README.md)**
 4. **[Model](3_Model/README.md)**
 5. **[Presentation](4_Presentation/Opencampusbot-ppt.pdf)**
-6. **[Results](5_results/result.pdf)**
+6. **[Results](5_results/results.pdf)**
 
 ----------
 ## Future Works
