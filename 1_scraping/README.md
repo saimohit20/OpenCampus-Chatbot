@@ -1,4 +1,4 @@
-# 1_scraping
+# Data Scraping
 
 This folder contains scripts and data for scraping course and program information for the OpenCampus.edu website
 
@@ -42,5 +42,5 @@ This folder contains scripts and data for scraping course and program informatio
 
 ---
 
-## 📄 Notes
+##  Notes
 - The output data will be used in later stages for vectorization and chatbot responses. 
