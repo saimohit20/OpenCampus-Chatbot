@@ -104,6 +104,17 @@ To get EduBot up and running, you'll need Python installed and a few simple step
     ```
     Your opencampus chatbot will open in your web browser!
 
+-----------
+
+## Documentation
+
+1. **[Literature Review](0_LiteratureReview/README.md)**
+2. **[Data Scraping](1_scraping/README.md)**
+3. **[vector Store](2_vector_store/README.md)**
+4. **[Model](3_Model/README.md)**
+5. **[Presentation](4_Presentation/README.md)**
+6. **[Results](5_results/README.md)**
+
 ----------
 ## Future Works
 
