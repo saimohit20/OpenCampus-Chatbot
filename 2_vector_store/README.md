@@ -1,4 +1,4 @@
-# 2_vector_store
+# Vector Store
 
 This folder contains scripts and data for building and managing the vector store.
 
